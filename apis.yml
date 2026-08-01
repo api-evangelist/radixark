@@ -1,7 +1,18 @@
 aid: radixark
 name: RadixArk
-description: 'RadixArk is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  RadixArk is a deep-tech AI-infrastructure company on a mission to make
+  frontier-level AI infrastructure open and accessible to everyone ("Build AI
+  for all"). Backed by a $100M seed round announced in May 2026, RadixArk builds
+  open-source infrastructure and managed tooling for training and serving modern
+  AI models at scale. Its flagship open-source projects are SGLang, a fast and
+  flexible inference/serving engine for large language and vision-language
+  models, and Miles, an enterprise-facing reinforcement-learning framework for
+  LLM and VLM post-training (with a companion Miles Diffusion framework for
+  large-scale diffusion training). RadixArk also operates a managed platform at
+  platform.radixark.com serving developers, enterprises, and research labs. The
+  company does not yet expose a public REST/HTTP API; this profile captures its
+  open-source packages, identity, and security posture pending an API surface.
 url: https://raw.githubusercontent.com/api-evangelist/radixark/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +20,30 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://radixark.ai/images/Radixark-Web-Preview.png
 tags:
 - Company
-- Ai
+- AI
+- AI Infrastructure
+- Machine Learning
+- LLM
+- Inference
+- Reinforcement Learning
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.radixark.ai/
+- type: Blog
+  url: https://www.radixark.com/blog
+- type: SignUp
+  url: https://platform.radixark.com
+- type: GitHubOrganization
+  url: https://github.com/radixark
+- type: TermsOfService
+  url: https://www.radixark.com/tos
+- type: PrivacyPolicy
+  url: https://www.radixark.com/privacy
+- type: Support
+  url: mailto:contact@radixark.ai
+- type: Twitter
+  url: https://x.com/radixark
+- type: Packages
+  url: packages/radixark-packages.yml
+- type: DomainSecurity
+  url: security/radixark-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1

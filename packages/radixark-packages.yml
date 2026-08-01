@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/radixark
+note: >-
+  RadixArk publishes open-source AI-infrastructure frameworks rather than API
+  client SDKs (the company exposes no public REST/HTTP API at this time). These
+  are the first-party software packages distributed by the RadixArk GitHub
+  organization. SGLang is a closely affiliated inference engine promoted by
+  RadixArk but its canonical home is the independent sgl-project organization,
+  so it is recorded here as related (official: false).
+packages:
+  - language: python
+    registry: github
+    name: miles
+    url: https://github.com/radixark/miles
+    install: pip install -e . (from source; git clone https://github.com/radixark/miles)
+    license: Apache-2.0
+    description: Enterprise-facing reinforcement learning framework for LLM and VLM post-training.
+    official: true
+  - language: python
+    registry: github
+    name: miles_diffusion
+    url: https://github.com/radixark/miles_diffusion
+    install: pip install -e . (from source; git clone https://github.com/radixark/miles_diffusion)
+    license: Apache-2.0
+    description: Post-training framework for large-scale diffusion model training and production workloads.
+    official: true
+  - language: rust
+    registry: github
+    name: sgl-router-for-miles
+    url: https://github.com/radixark/sgl-router-for-miles
+    description: Router component for the Miles framework.
+    official: true
+  - language: python
+    registry: pypi
+    name: sglang
+    url: https://pypi.org/project/sglang/
+    install: pip install sglang
+    homepage: https://www.sglang.io/
+    source: https://github.com/sgl-project/sglang
+    description: Fast serving framework for large language models and vision language models; promoted by RadixArk but maintained under the independent sgl-project organization.
+    official: false
